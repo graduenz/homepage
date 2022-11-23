@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
+  font-family: 'Be Vietnam Pro', 'Inter', Arial, sans-serif;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.card {
+  background-color: #fff;
+  place-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 18px;
+  box-shadow: rgb(0 0 0 / 40%) 0px 100px 140px -50px, rgb(0 0 0 / 10%) 0px 2px 174px 0px;
+  display: flex;
+  flex: 1 0 0px;
+  flex-flow: column nowrap;
+  gap: 0px;
+  height: min-content;
+  max-height: 700px;
+  max-width: 430px;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 1px;
+  will-change: transform;
+  font-size: 16px;
+}
+
+.card > .photo {
+  background: url(./public/rdnz.jpg);
+  background-size: cover;
+  background-position: 0 -100px;
+  height: 324px;
+  width: 100%;
+}
+
+.card > .body {
+  place-content: flex-start center;
+  align-items: flex-start;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: column nowrap;
+  gap: 30px;
+  height: min-content;
+  overflow: visible;
+  padding: 50px;
+  position: relative;
+  line-height: 1.6em;
+}
+
+.card > .body > h1 {
+  font-weight: 800;
+  font-size: 31px;
+  letter-spacing: -1px;
+  color: black;
+}
+
+.card > .body > a {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  #app {
+    background: #fff;
+  }
+  .card {
+    box-shadow: none;
+    border-radius: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  .card > .photo {
+    height: 200px;
+  }
+}
